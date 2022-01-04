@@ -1,7 +1,7 @@
 
 local a,b = pcall(function()
     repeat wait(0.25) until game:IsLoaded() and game.Players.LocalPlayer
-    if game.PlaceId == 3978370137 and not game.ReplicatedStorage:FindFirstChild("Matchinfo") then
+    if (game.PlaceId == 3978370137 or game.PlaceId == 7465136166) and not game.ReplicatedStorage:FindFirstChild("Matchinfo") then
         repeat wait() until game.Players.LocalPlayer:FindFirstChild("Loaded") and game.Players.LocalPlayer.Loaded.Value == true 
     end
     getgenv().Key = "%s"
@@ -11,7 +11,7 @@ local a,b = pcall(function()
 end)
 if not a then
     repeat wait(0.25) until game:IsLoaded() and game.Players.LocalPlayer
-    if game.PlaceId == 3978370137 and not game.ReplicatedStorage:FindFirstChild("Matchinfo") then
+    if (game.PlaceId == 3978370137 or game.PlaceId == 7465136166) and not game.ReplicatedStorage:FindFirstChild("Matchinfo") then
         repeat wait() until game.Players.LocalPlayer:FindFirstChild("Loaded") and game.Players.LocalPlayer.Loaded.Value == true 
     end
     getgenv().Key = "%s"
