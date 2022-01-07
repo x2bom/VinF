@@ -2,7 +2,7 @@
 local success,err = pcall(function()
     repeat wait(0.25) until game:IsLoaded()
     repeat wait(0.25) until game.Players.LocalPlayer
-    if (game.PlaceId == 3978370137 or game.PlaceId == 7465136166) and not game.ReplicatedStorage:FindFirstChild("Matchinfo") then
+    if (game.PlaceId == 3978370137 or game.PlaceId == 7465136166 or game.PlaceId == 1730877806 or game.PlaceId == 6360478118) and not game.ReplicatedStorage:FindFirstChild("Matchinfo") then
         repeat wait(0.25) until game.Players.LocalPlayer:FindFirstChild("Loaded")
         repeat wait(0.25) until game.Players.LocalPlayer.Loaded.Value == true
     end
@@ -14,7 +14,7 @@ if (not success) then
     rconsoleprint("report this to x2bom : "..err)
     repeat wait(0.25) until game:IsLoaded()
     repeat wait(0.25) until game.Players.LocalPlayer
-    if (game.PlaceId == 3978370137 or game.PlaceId == 7465136166) and not game.ReplicatedStorage:FindFirstChild("Matchinfo") then
+    if (game.PlaceId == 3978370137 or game.PlaceId == 7465136166 or game.PlaceId == 1730877806 or game.PlaceId == 6360478118) and not game.ReplicatedStorage:FindFirstChild("Matchinfo") then
         repeat wait(0.25) until game.Players.LocalPlayer:FindFirstChild("Loaded")
         repeat wait(0.25) until game.Players.LocalPlayer.Loaded.Value == true
     end
