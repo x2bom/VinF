@@ -41,7 +41,7 @@ if not getgenv().ScriptReady then
                 end
             until getgenv().namemap ~= nil
         end
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = maps[namemap]
+        game.Players.LocalPlayer.Character:WaitForCHild("HumanoidRootPart").CFrame = maps[namemap]
     end
     wait(105)
     local Exploit = KRNL_LOADED and "Krnl" or "Synapse"
