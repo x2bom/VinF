@@ -1,7 +1,7 @@
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 syn.queue_on_teleport([[
   loadstring(game:HttpGet("https://raw.githubusercontent.com/x2bom/VinF/main/autorejooin"))()
 ]])
-repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 start = tick()
 repeat wait() until tick()-start >= 800
 game:GetService("TeleportService"):Teleport(game.PlaceId,game.Players.LocalPlayer)
