@@ -17,6 +17,19 @@ function getstatus(c)
     return tablestatus[c]
 end
 local sendmsg = function(title,itemname,name,forceping)
+    if itemname == "Gura" then
+        msg1 = {content="https://cdn.discordapp.com/attachments/881835974173265930/932185488872316968/unknown_1.png omg gura"}
+        local response = http_request(
+        {
+        Url = getgenv().Settings.webhookurl,
+        Method = "POST",
+        Headers = {
+        ["Content-Type"] = "application/json"
+        },
+        Body = game:GetService("HttpService"):JSONEncode(msg1)
+        }
+        )
+    end
     msg = {
         ["content"] = getgenv().gettext(itemname,forceping),
         ["embeds"] = {
