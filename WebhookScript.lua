@@ -1,4 +1,21 @@
 local http_request = syn.request or http_request
+local tablestatus = {
+    dungeonfarm = "Dungeon",
+    krakenfarm = "Sea Creature",
+    shipfarm = "Ship",
+    ["so ez bro"] = "Mentally farming to max",
+    ["helo"] = "Testing webhook"
+}
+function getstatus(c)
+    if c ~= "helo" and c ~= "so ez bro" then
+        for i,v in next, tablestatus do
+            if Settings[tostring(i)] then
+                return v 
+            end
+        end
+    end
+    return tablestatus[c]
+end
 local sendmsg = function(title,itemname,name,forceping)
     msg = {
         ["content"] = getgenv().gettext(itemname,forceping),
@@ -15,6 +32,11 @@ local sendmsg = function(title,itemname,name,forceping)
                 {
                     ["name"] = title,
                     ["value"] = itemname,
+                    ["inline"] = false,  
+                },
+                {
+                    ["name"] = "Information",
+                    ["value"] = "Method : "..getstatus(itemname).."\n".."Time : "..os.date("%X"),
                     ["inline"] = false,  
                 }
                 },
