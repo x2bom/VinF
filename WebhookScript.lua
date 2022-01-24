@@ -16,9 +16,10 @@ function getstatus(c)
     end
     return tablestatus[c]
 end
+local links ={Gura="https://cdn.discordapp.com/attachments/881835974173265930/932185488872316968/unknown_1.png",Tori="https://cdn.discordapp.com/attachments/934829635114508428/935052379005546496/unknown.png"}
 local sendmsg = function(title,itemname,name,forceping)
-    if itemname == "Gura" then
-        msg1 = {content="https://cdn.discordapp.com/attachments/881835974173265930/932185488872316968/unknown_1.png omg gura"}
+    if links[itemname] then
+        msg1 = {content=links[itemname].." omg "..itemname:lower()}
         local response = http_request(
         {
         Url = getgenv().Settings.webhookurl,
