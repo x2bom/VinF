@@ -8,7 +8,8 @@ local success,err = pcall(function()
     end
     getgenv().Key = "%s"
     local Exploit = KRNL_LOADED and "Krnl" or "Synapse"
-    loadstring(game:HttpGet("https://xn--vn-9ja2dud.com/"..Exploit.."/getscript"))()
+    loadstring(game:HttpGet("https://vinbf.herokuapp.com/"..Exploit.."/getscript"))()
+
 end)
 if (not success) then
     rconsoleprint("report this to x2bom : "..err.." Account name : "..game.Players.LocalPlayer.Name)
@@ -20,7 +21,7 @@ if (not success) then
     end
     getgenv().Key = "%s"
     local Exploit = KRNL_LOADED and "Krnl" or "Synapse"
-    loadstring(game:HttpGet("https://xn--vn-9ja2dud.com/"..Exploit.."/getscript"))()
+    loadstring(game:HttpGet("https://vinbf.herokuapp.com/"..Exploit.."/getscript"))()
 end
 local maps = {
     ["Sky Islands"] = CFrame.new(-478.53298950195, 49.910675048828, 235.70126342773),
@@ -45,5 +46,5 @@ if not getgenv().ScriptReady then
     end
     wait(105)
     local Exploit = KRNL_LOADED and "Krnl" or "Synapse"
-    loadstring(game:HttpGet("https://xn--vn-9ja2dud.com/"..Exploit.."/getscript"))()
+    loadstring(game:HttpGet("https://vinbf.herokuapp.com/"..Exploit.."/getscript"))()
 end
