@@ -24,7 +24,7 @@ function tabletostr(c)
     return m
 end
 pcall(function()
-    local LegendaryDF = tabletostr(game:GetService("ReplicatedStorage").Modules.ToolDesc.Fruits.Mythical:GetChildren())..tabletostr(game:GetService("ReplicatedStorage").Modules.ToolDesc.Fruits.Legendary:GetChildren())
+    getgenv().LegendaryDF = tabletostr(game:GetService("ReplicatedStorage").Modules.ToolDesc.Fruits.Mythical:GetChildren())..tabletostr(game:GetService("ReplicatedStorage").Modules.ToolDesc.Fruits.Legendary:GetChildren())
 end)
 getgenv().gettext = function(v,is_force)
     if not is_force then
