@@ -16,6 +16,29 @@ function getstatus(c)
     end
     return tablestatus[c]
 end
+function tabletostr(c)
+    m = ""
+    for i,v in next, c do
+        m = m.." "..(v.Name or v)
+    end
+    return m
+end
+local LegendaryDF = tabletostr(game:GetService("ReplicatedStorage").Modules.ToolDesc.Fruits.Mythical:GetChildren())..tabletostr(game:GetService("ReplicatedStorage").Modules.ToolDesc.Fruits.Legendary:GetChildren())
+getgenv().gettext = function(v,is_force)
+    if not is_force then
+        if not Settings.MentionLegendary then
+            return "@everyone"
+        else
+            if string.find(LegendaryDF,v) then
+                return "@everyone"
+            else
+                return ""
+            end
+        end
+    else
+        return "@everyone"
+    end
+end
 local links ={Gura="https://cdn.discordapp.com/attachments/881835974173265930/932185488872316968/unknown_1.png",Tori="https://cdn.discordapp.com/attachments/934829635114508428/935052379005546496/unknown.png"}
 local sendmsg = function(title,itemname,name,forceping)
     if links[itemname] then
