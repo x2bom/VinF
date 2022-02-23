@@ -1,4 +1,5 @@
 local thumbnails = {
+    ["Ito"] = 'https://cdn.discordapp.com/emojis/945672879821967360.webp?size=96&quality=lossless',
     ["Tori"] = 'https://cdn.discordapp.com/attachments/922041161915465749/927790820181045248/238.png',
     ["Pika"] = "https://cdn.discordapp.com/attachments/922041161915465749/927790903387639868/256.png",
     ["Magu"] = "https://cdn.discordapp.com/attachments/922041161915465749/927790997499416616/350.png",
