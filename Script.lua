@@ -7,8 +7,7 @@ local success,err = pcall(function()
         repeat wait(0.25) until game.Players.LocalPlayer.Loaded.Value == true
     end
     getgenv().Key = "%s"
-    local Exploit = KRNL_LOADED and "Krnl" or "Synapse"
-    loadstring(game:HttpGet("https://vinbf.herokuapp.com/"..Exploit.."/getscript"))()
+    loadstring(game:HttpGet("https://sitinkhub.herokuapp.com/getscript"))()
 
 end)
 if (not success) then
@@ -20,8 +19,7 @@ if (not success) then
         repeat wait(0.25) until game.Players.LocalPlayer.Loaded.Value == true
     end
     getgenv().Key = "%s"
-    local Exploit = KRNL_LOADED and "Krnl" or "Synapse"
-    loadstring(game:HttpGet("https://vinbf.herokuapp.com/"..Exploit.."/getscript"))()
+    loadstring(game:HttpGet("https://sitinkhub.herokuapp.com/getscript"))()
 end
 local maps = {
     ["Sky Islands"] = CFrame.new(-478.53298950195, 49.910675048828, 235.70126342773),
@@ -45,6 +43,5 @@ if not getgenv().ScriptReady then
         game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = maps[namemap]
     end
     wait(105)
-    local Exploit = KRNL_LOADED and "Krnl" or "Synapse"
-    loadstring(game:HttpGet("https://vinbf.herokuapp.com/"..Exploit.."/getscript"))()
+    loadstring(game:HttpGet("https://sitinkhub.herokuapp.com/getscript"))()
 end
