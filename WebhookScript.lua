@@ -1,4 +1,4 @@
-local http_request = syn.request or http_request
+local http_request =  http_request or syn.request
 local tablestatus = {
     dungeonfarm = "Dungeon",
     krakenfarm = "Sea Creature",
