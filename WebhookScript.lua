@@ -61,7 +61,7 @@ local sendmsg = function(title,itemname,name,forceping)
         ["embeds"] = {
             {
                 ["color"] = tonumber(0x78B2DD),
-                ["title"] = "Vin Hub",
+                ["title"] = "sitink Hub",
                 ["fields"] = {
                     {
                     ["name"] = "Username",
@@ -84,7 +84,7 @@ local sendmsg = function(title,itemname,name,forceping)
                 },
                 ["footer"] = {
                     ["icon_url"] = "https://cdn.discordapp.com/icons/880044612343955457/90fee66ba0963828fcf37edf0ff73184.png",
-                    ["text"] = "Grand Piece Online - Vin Hub",
+                    ["text"] = "Grand Piece Online - sitink hub",
                 }
             }
         }
