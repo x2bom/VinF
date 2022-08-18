@@ -60,7 +60,7 @@ local sendmsg = function(title,itemname,name,forceping)
         ["content"] = getgenv().gettext(itemname,forceping),
         ["embeds"] = {
             {
-                ["color"] = tonumber(0x78B2DD),
+                ["color"] = tonumber(0x301934),
                 ["title"] = "sitink Hub",
                 ["fields"] = {
                     {
@@ -83,7 +83,7 @@ local sendmsg = function(title,itemname,name,forceping)
                     ["url"] = getgenv().thumbnails[itemname],
                 },
                 ["footer"] = {
-                    ["icon_url"] = "https://cdn.discordapp.com/icons/880044612343955457/90fee66ba0963828fcf37edf0ff73184.png",
+                    ["icon_url"] = "https://cdn.discordapp.com/icons/880044612343955457/a4f218e048657282135777a6248ebdcf.png?size=4096      ",
                     ["text"] = "Grand Piece Online - sitink hub",
                 }
             }
