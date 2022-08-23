@@ -27,18 +27,10 @@ pcall(function()
     getgenv().LegendaryDF = tabletostr(game:GetService("ReplicatedStorage").Modules.ToolDesc.Fruits.Mythical:GetChildren())..tabletostr(game:GetService("ReplicatedStorage").Modules.ToolDesc.Fruits.Legendary:GetChildren())
 end)
 getgenv().gettext = function(v,is_force)
-    if not is_force then
-        if not Settings.MentionLegendary then
-            return "@everyone"
-        else
-            if string.find(LegendaryDF,v) then
-                return "@everyone"
-            else
-                return ""
-            end
-        end
-    else
+    if string.find(LegendaryDF,v) then
         return "@everyone"
+    else
+        return ""
     end
 end
 local links ={Gura="https://cdn.discordapp.com/attachments/881835974173265930/932185488872316968/unknown_1.png",Tori="https://cdn.discordapp.com/attachments/934829635114508428/935052379005546496/unknown.png"}
@@ -47,7 +39,7 @@ local sendmsg = function(title,itemname,name,forceping)
         msg1 = {content=links[itemname].." omg "..itemname:lower()}
         local response = http_request(
         {
-        Url = getgenv().Settings.webhookurl,
+        Url = getgenv().Sv["Webhookid"],
         Method = "POST",
         Headers = {
         ["Content-Type"] = "application/json"
@@ -91,7 +83,7 @@ local sendmsg = function(title,itemname,name,forceping)
     }  
     local response = http_request(
     {
-    Url = getgenv().Settings.webhookurl,
+    Url = getgenv().Sv["Webhookid"],
     Method = "POST",
     Headers = {
     ["Content-Type"] = "application/json"
