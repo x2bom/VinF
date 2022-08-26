@@ -67,7 +67,7 @@ local sendmsg = function(title,itemname,name,forceping)
                 },
                 {
                     ["name"] = "Information",
-                    ["value"] = "Method : "..getstatus(itemname).."\n".."Time : "..os.date("%X"),
+                    ["value"] = "Method : "..(getstatus(itemname) or "Buying").."\n".."Time : "..os.date("%X"),
                     ["inline"] = false,  
                 }
                 },
