@@ -1,15 +1,15 @@
 local http_request =  http_request or syn.request
 local tablestatus = {
-    dungeonfarm = "Dungeon",
-    krakenfarm = "Sea Creature",
-    shipfarm = "Ship",
+    Dungeon = "Dungeon",
+    startkraken = "Sea Creature",
+    ShipFarm = "Ship",
     ["so ez bro"] = "Mentally farming to max",
     ["helo"] = "Testing webhook"
 }
 function getstatus(c)
     if c ~= "helo" and c ~= "so ez bro" then
         for i,v in next, tablestatus do
-            if Settings[tostring(i)] then
+            if getgenv().Sv[tostring(i)] then
                 return v 
             end
         end
